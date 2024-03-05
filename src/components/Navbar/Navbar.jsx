@@ -10,7 +10,7 @@ const Navbar = () => {
       <img src={Logo} alt="logo" />
       <div className="relative">
         <button
-          className="bg-green-200 w-max h-max p-10"
+          className="bg-primary w-max h-max p-1 text-primary"
           onClick={() => setOpen(true)}
         >
           <Menu />

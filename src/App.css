@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #044fff;
+  --light-yellow: #ffef90;
+  --text-color: #403f46;
+  --footer-color: #151515;
+  --light-green: #197b00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f8fb;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2525253a;
+}
+
+/* Typography */
+
+.typography-xs-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.typography-xs {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 11.7px;
+}
+
+.typography-sm-300-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.typography-sm-600-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.9599999785423279px;
+}
+
+.typography-md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+.typography-md-600-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.9599999785423279px;
+}
+
+.typography-md-bold {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.8px;
+}
+
+.typography-lg {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.typography-lg1 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24.7px;
+}
+
+.typography-lg2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.typography-xl {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.typography-xl1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31px;
+}
+
+.typography-xl2 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 39px;
+}
+
+.typography-xxl {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.typography-xxl-raleway {
+  font-family: "Raleway" sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+}
+
+.typography-xxl-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: -1.1100000143051147px;
+}
+
+.typography-xxl1-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: -1.1100000143051147px;
+}
+
+.typography-xxl2-heading {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 63px;
+}
+
+.typography-xxl3-heading {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.typography-xxl3-huge {
+  font-family: "Inter" sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -4.108529090881348px;
+}
+
+/* Container */
+
+.container-x-axis {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.container-y-axis {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .container-x-axis {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container-y-axis {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-x-axis {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .container-y-axis {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-x-axis {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .container-y-axis {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-x-axis {
+    padding-left: 24.375rem;
+    padding-right: 24.375rem;
+    max-width: 1400px;
+  }
+
+  .container-y-axis {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}

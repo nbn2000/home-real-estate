@@ -13,7 +13,7 @@ const Navbar = () => {
           className="bg-primary w-max h-max p-1 text-primary"
           onClick={() => setOpen(true)}
         >
-          <Menu className="bg-primary" />
+          <Menu className="bg-primary " />
         </button>
         <MenuModal open={open} onClose={() => setOpen(false)} />
       </div>

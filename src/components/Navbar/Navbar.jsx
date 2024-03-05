@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="w-full h-[134px] px-[7.5rem] flex flex-row justify-between items-center">
       <img src={Logo} alt="logo" />
       <div className="relative">
-        <button className="" onClick={() => setOpen(true)}>
+        <button className="bg-blue" onClick={() => setOpen(true)}>
           <Menu />
         </button>
         <MenuModal open={open} onClose={() => setOpen(false)} />

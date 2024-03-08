@@ -17,6 +17,9 @@ export default {
         footerColor: "var(--footer-color)",
         lightGreen: "var(--light-green)",
       },
+      transitionProperty: {
+        height: "height",
+      },
     },
   },
   plugins: [],

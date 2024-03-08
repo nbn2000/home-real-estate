@@ -18,7 +18,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  background-color: #f4f8fb;
+
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -26,6 +26,7 @@ html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +44,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #2525253a;
+}
+
+button:active,
+a:active {
+  scale: 0.99;
 }
 
 /* Typography */
@@ -121,6 +127,12 @@ body {
 
 .typography-xl1 {
   font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+}
+
+.typography-xl1-bold {
+  font-size: 24px;
   font-weight: 800;
   line-height: 31px;
 }
@@ -190,18 +202,14 @@ body {
 }
 
 .container-y-axis {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
   .container-x-axis {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .container-y-axis {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
 
@@ -222,20 +230,22 @@ body {
     padding-right: 8rem;
   }
   .container-y-axis {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
 @media (min-width: 1400px) {
   .container-x-axis {
-    padding-left: 24.375rem;
-    padding-right: 24.375rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-y-axis {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }

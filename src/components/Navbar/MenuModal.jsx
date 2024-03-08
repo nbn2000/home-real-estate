@@ -1,22 +1,36 @@
 import PropTypes from "prop-types";
-import { createPortal } from "react-dom";
+import "../animation.css";
 
-const MenuModal = ({ open, onClose }) => {
+const MenuModal = ({ open, links, setOpen }) => {
   if (!open) return null;
-  return createPortal(
-    <div className="w-[400px] h-[400] bg-gray-600 fixed top-0 right-0">
-      <button onClick={onClose} className="text-white">
-        x
-      </button>
-      a[]sdasd
-    </div>,
-    document.getElementById("modal")
+  return (
+    <div
+      className={`sm:w-[300px] w-[70%] shadow-[-14px_3px_21px_-7px_rgba(0,0,0,0.46)] bg-white z-50 fixed
+       buttom-0 right-0 p-6 ${open ? "show-height" : "hide-height"}`}
+    >
+      <div className="flex flex-col justify-start items-start gap-5">
+        {links.map(({ link, name }, idx) => (
+          <a
+            className="typography-md hover:text-white hover:bg-primary rounded-[5px] p-4 w-full transition-colors"
+            key={idx}
+            href={`${link}`}
+            onClick={() => setOpen(false)}
+          >
+            {name}
+          </a>
+        ))}
+        <button className="typography-md bg-black text-white w-[141px] h-[41px] rounded-[5px]">
+          Request a Call
+        </button>
+      </div>
+    </div>
   );
 };
 
 MenuModal.propTypes = {
   open: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
+  links: PropTypes.array.isRequired,
+  setOpen: PropTypes.func.isRequired,
 };
 
 export default MenuModal;

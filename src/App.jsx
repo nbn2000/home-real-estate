@@ -5,6 +5,7 @@ import "./App.css";
 const Navbar = lazy(() => import("./components/Navbar/Navbar"));
 const Header = lazy(() => import("./sections/Header"));
 const Search = lazy(() => import("./sections/Search"));
+const Badges = lazy(() => import("./sections/Badges"));
 const Services = lazy(() => import("./sections/Services"));
 const Products = lazy(() => import("./sections/Products"));
 const WhyUs = lazy(() => import("./sections/WhyUs"));
@@ -25,6 +26,7 @@ function App() {
       <Navbar />
       <Header />
       <Search />
+      <Badges />
       <Services />
       <Products />
       <WhyUs />

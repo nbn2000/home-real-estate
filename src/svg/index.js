@@ -10,3 +10,4 @@ export { default as Dollar } from "./Dollar";
 export { default as Rooms } from "./Rooms";
 export { default as House } from "./House";
 export { default as DropDownIcon } from "./DropDownIcon";
+export { default as RightArrow } from "./RightArrow";

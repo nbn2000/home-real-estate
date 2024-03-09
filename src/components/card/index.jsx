@@ -1,6 +1,6 @@
 const index = ({ children }) => {
   return (
-    <div className="grid grid-cols-2 self-center content-center justify-center items-center gap-x-[16px] gap-y-[35px]">
+    <div className="grid grid-cols-2 justify-items-center w-full gap-x-[16px] gap-y-[35px] md:grid-cols-3">
       {children}
     </div>
   );

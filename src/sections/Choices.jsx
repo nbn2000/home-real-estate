@@ -1,5 +1,5 @@
 const Choices = () => {
-  return <div className="h-screen">Choices</div>;
+  return <div className="container-x-axis container-y-axis"></div>;
 };
 
 export default Choices;

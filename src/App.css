@@ -73,6 +73,12 @@ a:active {
   line-height: 28px;
 }
 
+.typography-sm-300 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
 .typography-sm-600-inter {
   font-family: "Inter" sans-serif;
   font-size: 13px;
@@ -135,6 +141,13 @@ a:active {
   font-size: 24px;
   font-weight: 800;
   line-height: 31px;
+}
+
+.typography-xl2-inter {
+  font-family: "Inter" sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
 }
 
 .typography-xl2 {

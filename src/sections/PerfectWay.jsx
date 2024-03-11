@@ -4,7 +4,7 @@ import { BrokenHome, People } from "src/svg";
 const PerfectWay = () => {
   return (
     <div className="container-x-axis container-y-axis">
-      <div className="flex flex-col justify-center items-center gap-[41px] lg:flex-row">
+      <div className="flex flex-col justify-center items-center gap-[41px] lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center items-center gap-[53px] lg:gap-[96px] lg:w-[600px] lg:justify-between">
           <div className="flex flex-col justify-center items-center gap-[26px]">
             <span className="text-[rgba(64,63,70,1)] typography-xxl text-center lg:text-start">
